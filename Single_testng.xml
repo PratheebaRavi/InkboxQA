@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="8">
+	<test name="TestHome_CAD" thread-count="6" preserve-order="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="URL" value="https://staging.inkbox.com/"></parameter>
+		<parameter name="geoLocation" value="USD"></parameter>
+		<classes>
+			<class name="Inkbox.Tests.HomePageTest" />
+		</classes>
+	</test>
+	<test name="Test_CAD" thread-count="6" preserve-order="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="URL" value="https://staging.inkbox.com/"></parameter>
+		<parameter name="geoLocation" value="USD"></parameter>
+		<classes>
+			<class name="Inkbox.Tests.AlgoliaTest" />
+			<class name="Inkbox.Tests.ProductSearchTest" />
+			<class name="Inkbox.Tests.QuizTest" />
+			<class name="Inkbox.Tests.AccountTest" />
+			<class name="Inkbox.Tests.ContentFulTest" />
+			<class name="Inkbox.Tests.Nova_Test" />
+			<class name="Inkbox.Tests.LoginTest" />
+			<class name="Inkbox.Tests.TraceTest" />
+			<class name="Inkbox.Tests.GeoLocationTest" />
+			<class name="Inkbox.Tests.SubscriptionTest" />
+			<class name="Inkbox.Tests.PickedForYouTest" />
+			<class name="Inkbox.Tests.TattooMarkerTest" />
+		</classes>
+	</test>
+
+
+	<test name="Testqa" thread-count="1">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="URL" value="https://staging.inkbox.com/"></parameter>
+		<parameter name="geoLocation" value="USD"></parameter>
+		<classes>
+			<class name="Inkbox.Tests.CartTest" />
+			<class name="Inkbox.Tests.CustomTest" />
+		</classes>
+
+
+	</test>
+
+</suite> <!-- Suite -->

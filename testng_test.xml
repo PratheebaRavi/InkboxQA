@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="6">
+
+
+	<test thread-count="6" name="Test" preserve-order="true">
+		<!-- chrome -->
+		<!-- opera -->
+
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="URL" value="https://staging.inkbox.com/"></parameter>
+		<parameter name="geoLocation" value="CAD"></parameter>
+		<classes>
+		<!--	<class name="Inkbox.Tests.TraceTest" />-->
+			 <class name="Inkbox.Tests.AccountTest">
+				<methods>
+					<include name="Validate_Navigation_URL_ArtistPortal"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

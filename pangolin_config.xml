@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pangolin>
+<!-- Pangolin Server URL -->
+    <pangolin_url>http://pangolinurl:9090</pangolin_url>
+    <!-- TestRail URL -->
+    <testrail_url>https://inkboxqainkboxinkbox.testrail.io</testrail_url>
+    <!-- TestRail user name -->
+    <testrail_user>v.kishokumar@getinkbox.com</testrail_user>
+    <!-- TestRail encrypted password: please use http://server_name:port/pangolin/password to encrypt your plain text password -->
+    <testrail_encrypted_password>aMoX9sCaPySI1wQXhqLr</testrail_encrypted_password>
+    <!-- TestRail project -->
+    <testrail_project>Login page</testrail_project>
+    <!-- Whether the Pangolin is disabled or not. If this is omitted, Pangolin is enabled -->
+    <disabled>false</disabled>
+    <screenshotOnFailure>true</screenshotOnFailure>
+</pangolin>
