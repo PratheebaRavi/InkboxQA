@@ -1,0 +1,2259 @@
+<html>
+<head>
+<title>TestNG:  Test_GBP</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test_GBP</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>112/16/20</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 26 20:01:00 EDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>7762 seconds (7762324 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Inkbox.Tests.TraceTest.TC_5097_Verify_Trace()'><b>TC_5097_Verify_Trace</b><br>Test class: Inkbox.Tests.TraceTest<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.ButtonClick(ControlHelpers.java:208)
+	at Inkbox.Pages.TracePage.Validate_ExploreDesign(TracePage.java:192)
+	at Inkbox.Pages.TracePage.Validate_Trace(TracePage.java:358)
+	at Inkbox.Tests.TraceTest.TC_5097_Verify_Trace(TraceTest.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1365230431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1365230431'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.ButtonClick(ControlHelpers.java:208)
+	at Inkbox.Pages.TracePage.Validate_ExploreDesign(TracePage.java:192)
+	at Inkbox.Pages.TracePage.Validate_Trace(TracePage.java:358)
+	at Inkbox.Tests.TraceTest.TC_5097_Verify_Trace(TraceTest.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>53</td>
+<td>Inkbox.Tests.TraceTest@f78a47e</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5068_RecentSearches_validation()'><b>TC_5068_RecentSearches_validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.BasePage.Validate_RecentSearches(BasePage.java:1575)
+	at Inkbox.Tests.ProductSearchTest.TC_5068_RecentSearches_validation(ProductSearchTest.java:104)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1937333176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1937333176'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.BasePage.Validate_RecentSearches(BasePage.java:1575)
+	at Inkbox.Tests.ProductSearchTest.TC_5068_RecentSearches_validation(ProductSearchTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>260</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation()'><b>TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at Inkbox.Pages.GeoLocationPage.ValidatePriceTag_Custom(GeoLocationPage.java:583)
+	at Inkbox.Tests.GeoLocationTest.TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation(GeoLocationTest.java:90)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2071692241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2071692241'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.GeoLocationPage.ValidatePriceTag_Custom(GeoLocationPage.java:583)
+	at Inkbox.Tests.GeoLocationTest.TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation(GeoLocationTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>315</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_7482_TieredDiscounts()'><b>TC_7482_TieredDiscounts</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validating_TieredDiscounts(Nova_Page.java:860)
+	at Inkbox.Tests.Nova_Test.TC_7482_TieredDiscounts(Nova_Test.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810121295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810121295'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validating_TieredDiscounts(Nova_Page.java:860)
+	at Inkbox.Tests.Nova_Test.TC_7482_TieredDiscounts(Nova_Test.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>189</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5092_Validate_QuizSelection()'><b>TC_5092_Validate_QuizSelection</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb8126457f3577805e5965204b7b9db1
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Tests.QuizTest.TC_5092_Validate_QuizSelection(QuizTest.java:167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1227134319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1227134319'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb8126457f3577805e5965204b7b9db1
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Tests.QuizTest.TC_5092_Validate_QuizSelection(QuizTest.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>226</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.TattooMarkerTest.TC_57760_Adding_MarkerDuo_ItemToCart()'><b>TC_57760_Adding_MarkerDuo_ItemToCart</b><br>Test class: Inkbox.Tests.TattooMarkerTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_Duo(TattooMarkerPage.java:170)
+	at Inkbox.Tests.TattooMarkerTest.TC_57760_Adding_MarkerDuo_ItemToCart(TattooMarkerTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace195623718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195623718'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_Duo(TattooMarkerPage.java:170)
+	at Inkbox.Tests.TattooMarkerTest.TC_57760_Adding_MarkerDuo_ItemToCart(TattooMarkerTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>10</td>
+<td>Inkbox.Tests.TattooMarkerTest@76a4ebf2</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5074_Autosuggestion_Validation()'><b>TC_5074_Autosuggestion_Validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at Inkbox.Pages.BasePage.AutoSuggestValidation(BasePage.java:1624)
+	at Inkbox.Tests.ProductSearchTest.TC_5074_Autosuggestion_Validation(ProductSearchTest.java:165)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1354137241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1354137241'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.BasePage.AutoSuggestValidation(BasePage.java:1624)
+	at Inkbox.Tests.ProductSearchTest.TC_5074_Autosuggestion_Validation(ProductSearchTest.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>269</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.TattooMarkerTest.TC_57759_Adding_ArtistKit_ItemToCart()'><b>TC_57759_Adding_ArtistKit_ItemToCart</b><br>Test class: Inkbox.Tests.TattooMarkerTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_ArtistKit(TattooMarkerPage.java:250)
+	at Inkbox.Tests.TattooMarkerTest.TC_57759_Adding_ArtistKit_ItemToCart(TattooMarkerTest.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789418279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789418279'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_ArtistKit(TattooMarkerPage.java:250)
+	at Inkbox.Tests.TattooMarkerTest.TC_57759_Adding_ArtistKit_ItemToCart(TattooMarkerTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>10</td>
+<td>Inkbox.Tests.TattooMarkerTest@76a4ebf2</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4979_Verify_Toast()'><b>TC_4979_Verify_Toast</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validate_Toast(Nova_Page.java:107)
+	at Inkbox.Tests.Nova_Test.TC_4979_Verify_Toast(Nova_Test.java:219)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1773030974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1773030974'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validate_Toast(Nova_Page.java:107)
+	at Inkbox.Tests.Nova_Test.TC_4979_Verify_Toast(Nova_Test.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>85</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_31432_Subscription_SeasonalPlan_validation()'><b>TC_31432_Subscription_SeasonalPlan_validation</b><br>Test class: Inkbox.Tests.SubscriptionTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at Inkbox.Pages.SubscriptionPage.Validate_SeasonalTestplan(SubscriptionPage.java:180)
+	at Inkbox.Tests.SubscriptionTest.TC_31432_Subscription_SeasonalPlan_validation(SubscriptionTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421551727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421551727'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.SubscriptionPage.Validate_SeasonalTestplan(SubscriptionPage.java:180)
+	at Inkbox.Tests.SubscriptionTest.TC_31432_Subscription_SeasonalPlan_validation(SubscriptionTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>223</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5079_SortByPriceHighToLow()'><b>TC_5079_SortByPriceHighToLow</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at Inkbox.Pages.ProductsPage.ValidatePriceHighToLow(ProductsPage.java:1573)
+	at Inkbox.Tests.ProductSearchTest.TC_5079_SortByPriceHighToLow(ProductSearchTest.java:217)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace440372843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace440372843'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.ProductsPage.ValidatePriceHighToLow(ProductsPage.java:1573)
+	at Inkbox.Tests.ProductSearchTest.TC_5079_SortByPriceHighToLow(ProductSearchTest.java:217)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>320</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4966_Validate_Frequently_Purchased_Bundles()'><b>TC_4966_Validate_Frequently_Purchased_Bundles</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at Inkbox.Pages.Nova_Page.FrequentlyPurcahsed_Bundles(Nova_Page.java:1030)
+	at Inkbox.Tests.Nova_Test.TC_4966_Validate_Frequently_Purchased_Bundles(Nova_Test.java:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710379431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710379431'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.Nova_Page.FrequentlyPurcahsed_Bundles(Nova_Page.java:1030)
+	at Inkbox.Tests.Nova_Test.TC_4966_Validate_Frequently_Purchased_Bundles(Nova_Test.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>195</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5095_Validate_WithoutCompletingQuiz()'><b>TC_5095_Validate_WithoutCompletingQuiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e941ccb68c4b75e6f187353d5b90a24
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Tests.QuizTest.TC_5095_Validate_WithoutCompletingQuiz(QuizTest.java:219)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394807030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394807030'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e941ccb68c4b75e6f187353d5b90a24
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Tests.QuizTest.TC_5095_Validate_WithoutCompletingQuiz(QuizTest.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>226</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_13221_PriceValidation_GiftCart_Geolocation()'><b>TC_13221_PriceValidation_GiftCart_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_GiftCart_Checkout(GeoLocationPage.java:292)
+	at Inkbox.Tests.GeoLocationTest.TC_13221_PriceValidation_GiftCart_Geolocation(GeoLocationTest.java:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1194243926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1194243926'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_GiftCart_Checkout(GeoLocationPage.java:292)
+	at Inkbox.Tests.GeoLocationTest.TC_13221_PriceValidation_GiftCart_Geolocation(GeoLocationTest.java:139)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>275</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_21897_PriceValidation_TattooMarker_Geolocation()'><b>TC_21897_PriceValidation_TattooMarker_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_TattooMarker_Checkout(GeoLocationPage.java:225)
+	at Inkbox.Tests.GeoLocationTest.TC_21897_PriceValidation_TattooMarker_Geolocation(GeoLocationTest.java:149)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521500365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521500365'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_TattooMarker_Checkout(GeoLocationPage.java:225)
+	at Inkbox.Tests.GeoLocationTest.TC_21897_PriceValidation_TattooMarker_Geolocation(GeoLocationTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>476</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4970_Quiz_Nova_Validation()'><b>TC_4970_Quiz_Nova_Validation</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49788}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 240975a9726c80c2f537ee107b2ed357
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Pages.Nova_Page.Validate_Quiz_Nova(Nova_Page.java:1607)
+	at Inkbox.Tests.Nova_Test.TC_4970_Quiz_Nova_Validation(Nova_Test.java:143)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557602080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557602080'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49788}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 240975a9726c80c2f537ee107b2ed357
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Pages.Nova_Page.Validate_Quiz_Nova(Nova_Page.java:1607)
+	at Inkbox.Tests.Nova_Test.TC_4970_Quiz_Nova_Validation(Nova_Test.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>250</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5091_Validate_Quiz_AfterCompletionOfQuiz_WithClearCookies()'><b>TC_5091_Validate_Quiz_AfterCompletionOfQuiz_WithClearCookies</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>394</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5081_FilterBySize()'><b>TC_5081_FilterBySize</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>332</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_31392_Validate_OrderHistory_In_MyAccount()'><b>TC_31392_Validate_OrderHistory_In_MyAccount</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>248</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21901_Validating_HomePage()'><b>TC_21901_Validating_HomePage</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>253</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_31393_Validate_OrderHistory_BuyItAgain()'><b>TC_31393_Validate_OrderHistory_BuyItAgain</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>251</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_81323_Verify_Changepassword()'><b>TC_81323_Verify_Changepassword</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>283</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.TattooMarkerTest.Validate_TattooMarker()'><b>Validate_TattooMarker</b><br>Test class: Inkbox.Tests.TattooMarkerTest</td>
+<td></td>
+<td>452</td>
+<td>Inkbox.Tests.TattooMarkerTest@76a4ebf2</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21903_Validate_ReviewTag()'><b>TC_21903_Validate_ReviewTag</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>252</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5088_Complete_Quiz()'><b>TC_5088_Complete_Quiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>232</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4938_Trace_FAQ_Validation_Contentful()'><b>TC_4938_Trace_FAQ_Validation_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>242</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21902_ProductsDisplayed_are_Clickable_And_Move_To_PDP()'><b>TC_21902_ProductsDisplayed_are_Clickable_And_Move_To_PDP</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>317</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_57752_Adding_Freq_PurchasedItemToCart_Along_with_AnnualPlan()'><b>TC_57752_Adding_Freq_PurchasedItemToCart_Along_with_AnnualPlan</b><br>Test class: Inkbox.Tests.SubscriptionTest<br>Parameters: GBP</td>
+<td></td>
+<td>225</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_21925_Validate_Resources_ArtistPortal()'><b>TC_21925_Validate_Resources_ArtistPortal</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>329</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21900_Validate_Footer()'><b>TC_21900_Validate_Footer</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>296</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4912_Verify_PopularCategeories_ContentFul()'><b>TC_4912_Verify_PopularCategeories_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>207</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4948_Verify_PressBlock_ContentFul()'><b>TC_4948_Verify_PressBlock_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>241</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4965_Validate_FrequentlyPurchased_Freehand_Upsell()'><b>TC_4965_Validate_FrequentlyPurchased_Freehand_Upsell</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>199</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21945_Validate_BottomFooter()'><b>TC_21945_Validate_BottomFooter</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>244</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5093_Validate_QuizSelection_trayLocation()'><b>TC_5093_Validate_QuizSelection_trayLocation</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>244</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_4909_Validate_OrderHistory()'><b>TC_4909_Validate_OrderHistory</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>251</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.TattooMarkerTest.TC_57761_Adding_FreehandTattooMarker_ItemToCart()'><b>TC_57761_Adding_FreehandTattooMarker_ItemToCart</b><br>Test class: Inkbox.Tests.TattooMarkerTest</td>
+<td></td>
+<td>23</td>
+<td>Inkbox.Tests.TattooMarkerTest@76a4ebf2</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.Trace_FAQ_Max_and_Min_Validation()'><b>Trace_FAQ_Max_and_Min_Validation</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>288</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.TraceTest.TC_17774_ClickOn_TraceApp()'><b>TC_17774_ClickOn_TraceApp</b><br>Test class: Inkbox.Tests.TraceTest</td>
+<td></td>
+<td>8</td>
+<td>Inkbox.Tests.TraceTest@f78a47e</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21914_Validate_FAQ_Navigation()'><b>TC_21914_Validate_FAQ_Navigation</b><br>Test class: Inkbox.Tests.HomePageTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>449</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5019_Verify_ItemAddedToFavourites_Guestuser()'><b>TC_5019_Verify_ItemAddedToFavourites_Guestuser</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>221</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4964_Validate_FrequentlyPurchased_Catalog_Upsell()'><b>TC_4964_Validate_FrequentlyPurchased_Catalog_Upsell</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>248</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4943_Trace_App_Value_Props_Validation_Contentful()'><b>TC_4943_Trace_App_Value_Props_Validation_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>186</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.PickedForYouTest.TC_10208_Adding_ProductToCartFromPickForYou()'><b>TC_10208_Adding_ProductToCartFromPickForYou</b><br>Test class: Inkbox.Tests.PickedForYouTest</td>
+<td></td>
+<td>288</td>
+<td>Inkbox.Tests.PickedForYouTest@6892b3b6</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5085_Validate_QuizPageAvailability()'><b>TC_5085_Validate_QuizPageAvailability</b><br>Test class: Inkbox.Tests.QuizTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>80</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4973_Verify_TattooMarker()'><b>TC_4973_Verify_TattooMarker</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>168</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.LoginTest.TC_4959_LoginWithDirectUser()'><b>TC_4959_LoginWithDirectUser</b><br>Test class: Inkbox.Tests.LoginTest</td>
+<td></td>
+<td>245</td>
+<td>Inkbox.Tests.LoginTest@f0c8a99</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5082_Validate_PresentUrl_with_PreviousUrl()'><b>TC_5082_Validate_PresentUrl_with_PreviousUrl</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>319</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_5127_SubTotal_Total_priceTag_Validation_Geolocation()'><b>TC_5127_SubTotal_Total_priceTag_Validation_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td></td>
+<td>303</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_5207_Verify_EmailField_Footer()'><b>TC_5207_Verify_EmailField_Footer</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>257</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21948_Terms_of_Service_and_Privacy_Policy()'><b>TC_21948_Terms_of_Service_and_Privacy_Policy</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>261</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21913_Verify_InkoxLogo_Navigation()'><b>TC_21913_Verify_InkoxLogo_Navigation</b><br>Test class: Inkbox.Tests.HomePageTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>134</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4939_NovaMegaMainBars_GenericSale_Contentful()'><b>TC_4939_NovaMegaMainBars_GenericSale_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>154</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4944_InkboxTraceTitle_validation_Contentful()'><b>TC_4944_InkboxTraceTitle_validation_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>154</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_13223_PriceValidation_AllTattoos_Geolocation()'><b>TC_13223_PriceValidation_AllTattoos_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td></td>
+<td>307</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5077_SearchResults_Validation()'><b>TC_5077_SearchResults_Validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>306</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5087_Validate_StartQUiz()'><b>TC_5087_Validate_StartQUiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>218</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4949_Verify_BlogArticles_ContentFul()'><b>TC_4949_Verify_BlogArticles_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>151</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5013_SearchBox_NoResultsFound_validation()'><b>TC_5013_SearchBox_NoResultsFound_validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>268</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21899_PDP_RecentlyView_Validation_GuestUser()'><b>TC_21899_PDP_RecentlyView_Validation_GuestUser</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>683</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.PickedForYouTest.TC_10200_PickedForYou_Validation()'><b>TC_10200_PickedForYou_Validation</b><br>Test class: Inkbox.Tests.PickedForYouTest</td>
+<td></td>
+<td>11</td>
+<td>Inkbox.Tests.PickedForYouTest@6892b3b6</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_57762_Adding_Item_ShopSimilar_validation()'><b>TC_57762_Adding_Item_ShopSimilar_validation</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>367</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5067_Validate_Pagination_Using_NavButton()'><b>TC_5067_Validate_Pagination_Using_NavButton</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>353</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5089_Validate_RetakeQuiz_AfterCompletionOfQuiz()'><b>TC_5089_Validate_RetakeQuiz_AfterCompletionOfQuiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>260</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21898_Validate_HomePage_MenuItems()'><b>TC_21898_Validate_HomePage_MenuItems</b><br>Test class: Inkbox.Tests.HomePageTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>154</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5071_FilterBy_Categories()'><b>TC_5071_FilterBy_Categories</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>388</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_57763_ShopSimilar_validation()'><b>TC_57763_ShopSimilar_validation</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>306</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.UserImageChangingOrNot()'><b>UserImageChangingOrNot</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>413</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5073_FilterBy_Random_Category()'><b>TC_5073_FilterBy_Random_Category</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>324</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.LoginTest.TC_4879_SignUp()'><b>TC_4879_SignUp</b><br>Test class: Inkbox.Tests.LoginTest</td>
+<td></td>
+<td>141</td>
+<td>Inkbox.Tests.LoginTest@f0c8a99</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_4890_Items_Clickable_in_OrderHistory_Page()'><b>TC_4890_Items_Clickable_in_OrderHistory_Page</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>253</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4972_Verify_HowItsWorks_Nova()'><b>TC_4972_Verify_HowItsWorks_Nova</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>170</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_21924_Validate_MyDesign_ArtistPortal()'><b>TC_21924_Validate_MyDesign_ArtistPortal</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>304</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_57764_ShopSimilar_on_PDP_validation()'><b>TC_57764_ShopSimilar_on_PDP_validation</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>308</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21944_SocialMedia_Validation()'><b>TC_21944_SocialMedia_Validation</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>321</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4957_Validate_Custom_FAQ_ContentFul()'><b>TC_4957_Validate_Custom_FAQ_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>215</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5080_Validate_SearchResults()'><b>TC_5080_Validate_SearchResults</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>363</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21915_Validate_Maxmize_minimize_FAQ()'><b>TC_21915_Validate_Maxmize_minimize_FAQ</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>279</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.PDP_RecentlyView_Validation_LoginUser()'><b>PDP_RecentlyView_Validation_LoginUser</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>864</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.TraceTest.TC_17784_Validate_ViewBox()'><b>TC_17784_Validate_ViewBox</b><br>Test class: Inkbox.Tests.TraceTest</td>
+<td></td>
+<td>14</td>
+<td>Inkbox.Tests.TraceTest@f78a47e</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5070_FilterBy_Artists()'><b>TC_5070_FilterBy_Artists</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>388</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.ReturnPolicy_Validation_Footer()'><b>ReturnPolicy_Validation_Footer</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>255</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4976_Verify_Sale_Nova()'><b>TC_4976_Verify_Sale_Nova</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>301</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21941_Validate_About_INKBOX_InFooter()'><b>TC_21941_Validate_About_INKBOX_InFooter</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>302</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21943_Validate_OthersInFooter()'><b>TC_21943_Validate_OthersInFooter</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>318</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4954_Verify_InkFam_FAQ_ContentFul()'><b>TC_4954_Verify_InkFam_FAQ_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>301</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_4887_Tracking_Validation_Footer()'><b>TC_4887_Tracking_Validation_Footer</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>249</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_31436_Validate_Subscription_GuestUser()'><b>TC_31436_Validate_Subscription_GuestUser</b><br>Test class: Inkbox.Tests.SubscriptionTest</td>
+<td></td>
+<td>108</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.Validate_Footer_Text()'><b>Validate_Footer_Text</b><br>Test class: Inkbox.Tests.HomePageTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>339</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_21933_Validating_BackButton_Behavoir_ArtistPortal()'><b>TC_21933_Validating_BackButton_Behavoir_ArtistPortal</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>278</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5066_Validate_Pagination_By_page_Numbers()'><b>TC_5066_Validate_Pagination_By_page_Numbers</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>326</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_5125_DollarSign_priceTag_Validation_Cart_Geolocation()'><b>TC_5125_DollarSign_priceTag_Validation_Cart_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td></td>
+<td>308</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21942_Validate_Customer_Care_InFooter()'><b>TC_21942_Validate_Customer_Care_InFooter</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>301</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_21940_Validate_EmailBox_InFooter()'><b>TC_21940_Validate_EmailBox_InFooter</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>256</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5075_Autosuggestion_Validation_Negative()'><b>TC_5075_Autosuggestion_Validation_Negative</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>270</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4962_Validate_FrequentlyPurchased_Mix_Upsell()'><b>TC_4962_Validate_FrequentlyPurchased_Mix_Upsell</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>573</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_31437_SubscribeNow_Validation()'><b>TC_31437_SubscribeNow_Validation</b><br>Test class: Inkbox.Tests.SubscriptionTest</td>
+<td></td>
+<td>55</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_4908_Verify_RedeemRewards()'><b>TC_4908_Verify_RedeemRewards</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>249</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5078_SortByPriceLowToHigh()'><b>TC_5078_SortByPriceLowToHigh</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>313</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5094_validate_displayTray_WhenOneSelectionIn_Quiz()'><b>TC_5094_validate_displayTray_WhenOneSelectionIn_Quiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>240</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.Validate_FreeShipping_Page_Contentful()'><b>Validate_FreeShipping_Page_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>261</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4953_Verify_TattooMarker_FAQ_ContentFul()'><b>TC_4953_Verify_TattooMarker_FAQ_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>211</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5065_PopularSearches_validation_Guestuser()'><b>TC_5065_PopularSearches_validation_Guestuser</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>122</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.ValidateCustomProduct_Navigation_InOrderHistory()'><b>ValidateCustomProduct_Navigation_InOrderHistory</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>255</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.TC_57765_Adding_Item_ShopSimilar_PDP_validation()'><b>TC_57765_Adding_Item_ShopSimilar_PDP_validation</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>367</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5076_EmptySearchBox_Validation()'><b>TC_5076_EmptySearchBox_Validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>260</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_13222_PriceValidation_CustomProduct_Geolocation()'><b>TC_13222_PriceValidation_CustomProduct_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP, https://inkbox.com/</td>
+<td></td>
+<td>384</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5072_FilterBy_All_Sizes()'><b>TC_5072_FilterBy_All_Sizes</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>346</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4963_Validate_FrequentlyPurchased_Custom_Upsell()'><b>TC_4963_Validate_FrequentlyPurchased_Custom_Upsell</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>250</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5086_Press_StartQuiz()'><b>TC_5086_Press_StartQuiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td></td>
+<td>227</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.PDP_Validation_GuestUser_Accordion_Max_Mini_Pickedforyou_Arrow_scrollable_ShopinstaVisible()'><b>PDP_Validation_GuestUser_Accordion_Max_Mini_Pickedforyou_Arrow_scrollable_ShopinstaVisible</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>220</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_5128_CheckoutPage_priceTag_Validation_Geolocation()'><b>TC_5128_CheckoutPage_priceTag_Validation_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td></td>
+<td>308</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5064_Verify_Changepassword_LessThanEightChar()'><b>TC_5064_Verify_Changepassword_LessThanEightChar</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>264</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_57753_Adding_Freq_PurchasedItemToCart_Along_with_SeasonalPlan()'><b>TC_57753_Adding_Freq_PurchasedItemToCart_Along_with_SeasonalPlan</b><br>Test class: Inkbox.Tests.SubscriptionTest<br>Parameters: GBP</td>
+<td></td>
+<td>226</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4958_TattooMarker_FAQ_Validation_Contentful()'><b>TC_4958_TattooMarker_FAQ_Validation_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>312</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4950_Verify_ShopInsta_ContentFul()'><b>TC_4950_Verify_ShopInsta_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>154</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4981_Verify_Shop_From_Nova()'><b>TC_4981_Verify_Shop_From_Nova</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>892</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5083_ValidatePricingBlock()'><b>TC_5083_ValidatePricingBlock</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td></td>
+<td>310</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.TraceTest.Verify_Trace_Watch_Tutorial()'><b>Verify_Trace_Watch_Tutorial</b><br>Test class: Inkbox.Tests.TraceTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>32</td>
+<td>Inkbox.Tests.TraceTest@f78a47e</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_5122_Geoloction_Validation_for_Dollar_Sign_And_Text_In_AllTattoos()'><b>TC_5122_Geoloction_Validation_for_Dollar_Sign_And_Text_In_AllTattoos</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td></td>
+<td>364</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.Validating_Facebook_Login()'><b>Validating_Facebook_Login</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>275</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4942_Tracing_tips_from_the_pros_Validation_Contentful()'><b>TC_4942_Tracing_tips_from_the_pros_Validation_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>158</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_4907()'><b>TC_4907</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>253</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4978_Verify_Searchablepage()'><b>TC_4978_Verify_Searchablepage</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>169</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.HomePageTest.PDP_Validation_WithLogin_Accordion_Max_Mini_Pickedforyou_Arrow_scrollable_ShopinstaVisible()'><b>PDP_Validation_WithLogin_Accordion_Max_Mini_Pickedforyou_Arrow_scrollable_ShopinstaVisible</b><br>Test class: Inkbox.Tests.HomePageTest</td>
+<td></td>
+<td>352</td>
+<td>Inkbox.Tests.HomePageTest@3c77d488</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4941_Trace_PromoBanner_Validation_Contentful()'><b>TC_4941_Trace_PromoBanner_Validation_Contentful</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>160</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.ContentFulTest.TC_4951_Verify_General_FAQ_ContentFul()'><b>TC_4951_Verify_General_FAQ_ContentFul</b><br>Test class: Inkbox.Tests.ContentFulTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>152</td>
+<td>Inkbox.Tests.ContentFulTest@2ddc9a9f</td></tr>
+<tr>
+<td title='Inkbox.Tests.AccountTest.TC_21926_Validate_SubmitDesigns()'><b>TC_21926_Validate_SubmitDesigns</b><br>Test class: Inkbox.Tests.AccountTest</td>
+<td></td>
+<td>253</td>
+<td>Inkbox.Tests.AccountTest@750e2b97</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Inkbox.Tests.TattooMarkerTest.TC_57759_Adding_ArtistKit_ItemToCart()'><b>TC_57759_Adding_ArtistKit_ItemToCart</b><br>Test class: Inkbox.Tests.TattooMarkerTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_ArtistKit(TattooMarkerPage.java:250)
+	at Inkbox.Tests.TattooMarkerTest.TC_57759_Adding_ArtistKit_ItemToCart(TattooMarkerTest.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4249088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4249088'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_ArtistKit(TattooMarkerPage.java:250)
+	at Inkbox.Tests.TattooMarkerTest.TC_57759_Adding_ArtistKit_ItemToCart(TattooMarkerTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>10</td>
+<td>Inkbox.Tests.TattooMarkerTest@76a4ebf2</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5068_RecentSearches_validation()'><b>TC_5068_RecentSearches_validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.BasePage.Validate_RecentSearches(BasePage.java:1575)
+	at Inkbox.Tests.ProductSearchTest.TC_5068_RecentSearches_validation(ProductSearchTest.java:104)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace966982785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace966982785'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.BasePage.Validate_RecentSearches(BasePage.java:1575)
+	at Inkbox.Tests.ProductSearchTest.TC_5068_RecentSearches_validation(ProductSearchTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>261</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5079_SortByPriceHighToLow()'><b>TC_5079_SortByPriceHighToLow</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at Inkbox.Pages.ProductsPage.ValidatePriceHighToLow(ProductsPage.java:1573)
+	at Inkbox.Tests.ProductSearchTest.TC_5079_SortByPriceHighToLow(ProductSearchTest.java:217)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace661180513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace661180513'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.ProductsPage.ValidatePriceHighToLow(ProductsPage.java:1573)
+	at Inkbox.Tests.ProductSearchTest.TC_5079_SortByPriceHighToLow(ProductSearchTest.java:217)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>321</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5095_Validate_WithoutCompletingQuiz()'><b>TC_5095_Validate_WithoutCompletingQuiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e331dd61c8e22a2a7d7701e8253b4eb
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Tests.QuizTest.TC_5095_Validate_WithoutCompletingQuiz(QuizTest.java:219)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace361255746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace361255746'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e331dd61c8e22a2a7d7701e8253b4eb
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Tests.QuizTest.TC_5095_Validate_WithoutCompletingQuiz(QuizTest.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>226</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4979_Verify_Toast()'><b>TC_4979_Verify_Toast</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validate_Toast(Nova_Page.java:107)
+	at Inkbox.Tests.Nova_Test.TC_4979_Verify_Toast(Nova_Test.java:219)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1045374756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1045374756'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validate_Toast(Nova_Page.java:107)
+	at Inkbox.Tests.Nova_Test.TC_4979_Verify_Toast(Nova_Test.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>87</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_21897_PriceValidation_TattooMarker_Geolocation()'><b>TC_21897_PriceValidation_TattooMarker_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_TattooMarker_Checkout(GeoLocationPage.java:225)
+	at Inkbox.Tests.GeoLocationTest.TC_21897_PriceValidation_TattooMarker_Geolocation(GeoLocationTest.java:149)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1903189595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1903189595'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_TattooMarker_Checkout(GeoLocationPage.java:225)
+	at Inkbox.Tests.GeoLocationTest.TC_21897_PriceValidation_TattooMarker_Geolocation(GeoLocationTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>477</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.TattooMarkerTest.TC_57760_Adding_MarkerDuo_ItemToCart()'><b>TC_57760_Adding_MarkerDuo_ItemToCart</b><br>Test class: Inkbox.Tests.TattooMarkerTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_Duo(TattooMarkerPage.java:170)
+	at Inkbox.Tests.TattooMarkerTest.TC_57760_Adding_MarkerDuo_ItemToCart(TattooMarkerTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2111513685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2111513685'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Inkbox.Pages.TattooMarkerPage.ValidateMarker_Duo(TattooMarkerPage.java:170)
+	at Inkbox.Tests.TattooMarkerTest.TC_57760_Adding_MarkerDuo_ItemToCart(TattooMarkerTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>10</td>
+<td>Inkbox.Tests.TattooMarkerTest@76a4ebf2</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5089_Validate_RetakeQuiz_AfterCompletionOfQuiz()'><b>TC_5089_Validate_RetakeQuiz_AfterCompletionOfQuiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f9c6288bc5a4cc0068726b41813ffb50
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Tests.QuizTest.TC_5089_Validate_RetakeQuiz_AfterCompletionOfQuiz(QuizTest.java:107)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace223044356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace223044356'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f9c6288bc5a4cc0068726b41813ffb50
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Tests.QuizTest.TC_5089_Validate_RetakeQuiz_AfterCompletionOfQuiz(QuizTest.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>226</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5092_Validate_QuizSelection()'><b>TC_5092_Validate_QuizSelection</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38c219704dd383b87ef37867b0f545cf
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Tests.QuizTest.TC_5092_Validate_QuizSelection(QuizTest.java:167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1592655743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1592655743'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38c219704dd383b87ef37867b0f545cf
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Tests.QuizTest.TC_5092_Validate_QuizSelection(QuizTest.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>226</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4970_Quiz_Nova_Validation()'><b>TC_4970_Quiz_Nova_Validation</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c84183d21e84ef89a33806ec2d435873
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Pages.Nova_Page.Validate_Quiz_Nova(Nova_Page.java:1607)
+	at Inkbox.Tests.Nova_Test.TC_4970_Quiz_Nova_Validation(Nova_Test.java:143)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017647921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017647921'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c84183d21e84ef89a33806ec2d435873
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Pages.QuizPage.Complete_Quiz(QuizPage.java:329)
+	at Inkbox.Pages.Nova_Page.Validate_Quiz_Nova(Nova_Page.java:1607)
+	at Inkbox.Tests.Nova_Test.TC_4970_Quiz_Nova_Validation(Nova_Test.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>248</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_13221_PriceValidation_GiftCart_Geolocation()'><b>TC_13221_PriceValidation_GiftCart_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_GiftCart_Checkout(GeoLocationPage.java:292)
+	at Inkbox.Tests.GeoLocationTest.TC_13221_PriceValidation_GiftCart_Geolocation(GeoLocationTest.java:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131938603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131938603'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.GeoLocationPage.PriceValidation_GiftCart_Checkout(GeoLocationPage.java:292)
+	at Inkbox.Tests.GeoLocationTest.TC_13221_PriceValidation_GiftCart_Geolocation(GeoLocationTest.java:139)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>274</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5075_Autosuggestion_Validation_Negative()'><b>TC_5075_Autosuggestion_Validation_Negative</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.WaitForElement(ControlHelpers.java:442)
+	at Inkbox.Pages.BasePage.AcctountIcon(BasePage.java:1583)
+	at Inkbox.Pages.LoginPage.UserLogin(LoginPage.java:203)
+	at Inkbox.Tests.ProductSearchTest.TC_5075_Autosuggestion_Validation_Negative(ProductSearchTest.java:173)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2050438563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050438563'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.WaitForElement(ControlHelpers.java:442)
+	at Inkbox.Pages.BasePage.AcctountIcon(BasePage.java:1583)
+	at Inkbox.Pages.LoginPage.UserLogin(LoginPage.java:203)
+	at Inkbox.Tests.ProductSearchTest.TC_5075_Autosuggestion_Validation_Negative(ProductSearchTest.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>187</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_4966_Validate_Frequently_Purchased_Bundles()'><b>TC_4966_Validate_Frequently_Purchased_Bundles</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at Inkbox.Pages.Nova_Page.FrequentlyPurcahsed_Bundles(Nova_Page.java:1030)
+	at Inkbox.Tests.Nova_Test.TC_4966_Validate_Frequently_Purchased_Bundles(Nova_Test.java:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1944634013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1944634013'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.Nova_Page.FrequentlyPurcahsed_Bundles(Nova_Page.java:1030)
+	at Inkbox.Tests.Nova_Test.TC_4966_Validate_Frequently_Purchased_Bundles(Nova_Test.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>196</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.Nova_Test.TC_7482_TieredDiscounts()'><b>TC_7482_TieredDiscounts</b><br>Test class: Inkbox.Tests.Nova_Test<br>Parameters: https://inkbox.com/</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validating_TieredDiscounts(Nova_Page.java:860)
+	at Inkbox.Tests.Nova_Test.TC_7482_TieredDiscounts(Nova_Test.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace713361936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace713361936'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.Nova_Page.Validating_TieredDiscounts(Nova_Page.java:860)
+	at Inkbox.Tests.Nova_Test.TC_7482_TieredDiscounts(Nova_Test.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>189</td>
+<td>Inkbox.Tests.Nova_Test@2a7f1f10</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5074_Autosuggestion_Validation()'><b>TC_5074_Autosuggestion_Validation</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at Inkbox.Pages.BasePage.AutoSuggestValidation(BasePage.java:1624)
+	at Inkbox.Tests.ProductSearchTest.TC_5074_Autosuggestion_Validation(ProductSearchTest.java:165)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace253570155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace253570155'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null,
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.BasePage.AutoSuggestValidation(BasePage.java:1624)
+	at Inkbox.Tests.ProductSearchTest.TC_5074_Autosuggestion_Validation(ProductSearchTest.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>269</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.ProductSearchTest.TC_5072_FilterBy_All_Sizes()'><b>TC_5072_FilterBy_All_Sizes</b><br>Test class: Inkbox.Tests.ProductSearchTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.BasePage.VerifyAccountLogin(BasePage.java:2304)
+	at Inkbox.Pages.LoginPage.Loginvalidation(LoginPage.java:185)
+	at Inkbox.Pages.LoginPage.UserLogin(LoginPage.java:210)
+	at Inkbox.Tests.ProductSearchTest.TC_5072_FilterBy_All_Sizes(ProductSearchTest.java:143)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1639415852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1639415852'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.BasePage.VerifyAccountLogin(BasePage.java:2304)
+	at Inkbox.Pages.LoginPage.Loginvalidation(LoginPage.java:185)
+	at Inkbox.Pages.LoginPage.UserLogin(LoginPage.java:210)
+	at Inkbox.Tests.ProductSearchTest.TC_5072_FilterBy_All_Sizes(ProductSearchTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>251</td>
+<td>Inkbox.Tests.ProductSearchTest@4145bad8</td></tr>
+<tr>
+<td title='Inkbox.Tests.QuizTest.TC_5086_Press_StartQuiz()'><b>TC_5086_Press_StartQuiz</b><br>Test class: Inkbox.Tests.QuizTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25e6615d157ee4810116aa76757cc4aa
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Tests.QuizTest.TC_5086_Press_StartQuiz(QuizTest.java:73)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace380159796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace380159796'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@title=&apos;typeform-embed&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25e6615d157ee4810116aa76757cc4aa
+*** Element info: {Using=xpath, value=//iframe[@title=&apos;typeform-embed&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Inkbox.Pages.QuizPage.Validate_StartQuiz(QuizPage.java:248)
+	at Inkbox.Pages.QuizPage.Press_StartQuiz(QuizPage.java:259)
+	at Inkbox.Tests.QuizTest.TC_5086_Press_StartQuiz(QuizTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>228</td>
+<td>Inkbox.Tests.QuizTest@2892d68</td></tr>
+<tr>
+<td title='Inkbox.Tests.GeoLocationTest.TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation()'><b>TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation</b><br>Test class: Inkbox.Tests.GeoLocationTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at Inkbox.Pages.GeoLocationPage.ValidatePriceTag_Custom(GeoLocationPage.java:583)
+	at Inkbox.Tests.GeoLocationTest.TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation(GeoLocationTest.java:90)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace765176805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace765176805'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.GeoLocationPage.ValidatePriceTag_Custom(GeoLocationPage.java:583)
+	at Inkbox.Tests.GeoLocationTest.TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation(GeoLocationTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>314</td>
+<td>Inkbox.Tests.GeoLocationTest@7526515b</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_57752_Adding_Freq_PurchasedItemToCart_Along_with_AnnualPlan()'><b>TC_57752_Adding_Freq_PurchasedItemToCart_Along_with_AnnualPlan</b><br>Test class: Inkbox.Tests.SubscriptionTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.SubscriptionPage.Validate_Annual_FPI_Item_ToCart(SubscriptionPage.java:83)
+	at Inkbox.Tests.SubscriptionTest.TC_57752_Adding_Freq_PurchasedItemToCart_Along_with_AnnualPlan(SubscriptionTest.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace584010001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584010001'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.SubscriptionPage.Validate_Annual_FPI_Item_ToCart(SubscriptionPage.java:83)
+	at Inkbox.Tests.SubscriptionTest.TC_57752_Adding_Freq_PurchasedItemToCart_Along_with_AnnualPlan(SubscriptionTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>236</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+<tr>
+<td title='Inkbox.Tests.SubscriptionTest.TC_31432_Subscription_SeasonalPlan_validation()'><b>TC_31432_Subscription_SeasonalPlan_validation</b><br>Test class: Inkbox.Tests.SubscriptionTest<br>Parameters: GBP</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at Inkbox.Pages.SubscriptionPage.Validate_SeasonalTestplan(SubscriptionPage.java:180)
+	at Inkbox.Tests.SubscriptionTest.TC_31432_Subscription_SeasonalPlan_validation(SubscriptionTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939862464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1939862464'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Inkbox.Pages.SubscriptionPage.Validate_SeasonalTestplan(SubscriptionPage.java:180)
+	at Inkbox.Tests.SubscriptionTest.TC_31432_Subscription_SeasonalPlan_validation(SubscriptionTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>223</td>
+<td>Inkbox.Tests.SubscriptionTest@6d4d66d2</td></tr>
+</table><p>
+</body>
+</html>

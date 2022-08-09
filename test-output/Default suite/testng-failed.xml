@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Inkbox.Tests.GeoLocationTest">
+        <methods>
+          <include name="TC_5124_Geoloction_Validation_for_Dollar_Sign_And_Text_In_AllTattoos"/>
+          <include name="TC_5126_Custom_DollarSign_priceTag_Validation_Cart_Geolocation"/>
+          <include name="TC_5128_CheckoutPage_priceTag_Validation_Geolocation"/>
+          <include name="AfterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="TC_13222_PriceValidation_CustomProduct_Geolocation"/>
+          <include name="afterMethod"/>
+          <include name="TC_21897_PriceValidation_TattooMarker_Geolocation"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="TC_5127_SubTotal_Total_priceTag_Validation_Geolocation"/>
+          <include name="TC_5125_DollarSign_priceTag_Validation_Cart_Geolocation"/>
+          <include name="TC_13223_PriceValidation_AllTattoos_Geolocation"/>
+          <include name="TC_13221_PriceValidation_GiftCart_Geolocation"/>
+          <include name="BeforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- Inkbox.Tests.GeoLocationTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

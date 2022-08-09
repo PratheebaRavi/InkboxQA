@@ -1,0 +1,1053 @@
+<html>
+<head>
+<title>TestNG:  GBP_Cart</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GBP_Cart</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/10/10</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 26 22:10:22 EDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>20764 seconds (20764291 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeThree_CustomProducttoCart()'><b>AddingSizeThree_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeThree_CustomProducttoCart(CustomTest.java:74)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace97068089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace97068089'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeThree_CustomProducttoCart(CustomTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>347</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_81294_AddingSizeTwo_CustomProducttoCart()'><b>TC_81294_AddingSizeTwo_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.TC_81294_AddingSizeTwo_CustomProducttoCart(CustomTest.java:65)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace965379883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965379883'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.TC_81294_AddingSizeTwo_CustomProducttoCart(CustomTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>346</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeFourth_CustomProducttoCart()'><b>AddingSizeFourth_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFourth_CustomProducttoCart(CustomTest.java:83)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973550068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973550068'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFourth_CustomProducttoCart(CustomTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>347</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5057_Validate_freeShipping_Message_Custom()'><b>TC_5057_Validate_freeShipping_Message_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.CustomPage.Validate_freeShippingMessage_Custom(CustomPage.java:533)
+	at Inkbox.Pages.CustomPage.Validate_FreeshipplingMessage_Custom(CustomPage.java:456)
+	at Inkbox.Tests.CustomTest.TC_5057_Validate_freeShipping_Message_Custom(CustomTest.java:257)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace298882709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace298882709'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.CustomPage.Validate_freeShippingMessage_Custom(CustomPage.java:533)
+	at Inkbox.Pages.CustomPage.Validate_FreeshipplingMessage_Custom(CustomPage.java:456)
+	at Inkbox.Tests.CustomTest.TC_5057_Validate_freeShipping_Message_Custom(CustomTest.java:257)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>369</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_21939_Validate_SelectedSize_NegativeScenario()'><b>TC_21939_Validate_SelectedSize_NegativeScenario</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.Entertext(ControlHelpers.java:311)
+	at Inkbox.Pages.AccountPage.Validate_SelectedSize_NegativeScenario(AccountPage.java:234)
+	at Inkbox.Tests.CartTest.TC_21939_Validate_SelectedSize_NegativeScenario(CartTest.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace109432370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace109432370'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.Entertext(ControlHelpers.java:311)
+	at Inkbox.Pages.AccountPage.Validate_SelectedSize_NegativeScenario(AccountPage.java:234)
+	at Inkbox.Tests.CartTest.TC_21939_Validate_SelectedSize_NegativeScenario(CartTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>290</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4932_VerifyFreeShippingMessage()'><b>TC_4932_VerifyFreeShippingMessage</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;£12GBP&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:468)
+	at Inkbox.Tests.CartTest.TC_4932_VerifyFreeShippingMessage(CartTest.java:472)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927969045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927969045'><pre>java.lang.NumberFormatException: For input string: &quot;£12GBP&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:468)
+	at Inkbox.Tests.CartTest.TC_4932_VerifyFreeShippingMessage(CartTest.java:472)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>335</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeFifth_CustomProducttoCart()'><b>AddingSizeFifth_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_CustomProducttoCart(CustomTest.java:93)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276518369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace276518369'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_CustomProducttoCart(CustomTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>346</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeFifth_Two_CustomProducttoCart()'><b>AddingSizeFifth_Two_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_Two_CustomProducttoCart(CustomTest.java:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075304012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075304012'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_Two_CustomProducttoCart(CustomTest.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>346</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4998_Validate_ZeroItemsIncart()'><b>TC_4998_Validate_ZeroItemsIncart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Tests.CartTest.TC_4998_Validate_ZeroItemsIncart(CartTest.java:73)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1823756953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1823756953'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Tests.CartTest.TC_4998_Validate_ZeroItemsIncart(CartTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>425</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_7483_LearnMoreSectionTieredDiscountsBannerInCart()'><b>TC_7483_LearnMoreSectionTieredDiscountsBannerInCart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 874b8910e775a3f9da47de8918f6a639
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at Helpers.ControlHelpers.HoverOver(ControlHelpers.java:411)
+	at Inkbox.Pages.CartPage.Validate_LearnMoreSectionTieredDiscountsBannerInCart(CartPage.java:153)
+	at Inkbox.Tests.CartTest.TC_7483_LearnMoreSectionTieredDiscountsBannerInCart(CartTest.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace274220695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace274220695'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 874b8910e775a3f9da47de8918f6a639
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at Helpers.ControlHelpers.HoverOver(ControlHelpers.java:411)
+	at Inkbox.Pages.CartPage.Validate_LearnMoreSectionTieredDiscountsBannerInCart(CartPage.java:153)
+	at Inkbox.Tests.CartTest.TC_7483_LearnMoreSectionTieredDiscountsBannerInCart(CartTest.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>307</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5137_Verify_Custom()'><b>TC_5137_Verify_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>381</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5138_Validating_TrendingDesigns_Custom()'><b>TC_5138_Validating_TrendingDesigns_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>372</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4930_ValidateItems_Adding_To_Cart()'><b>TC_4930_ValidateItems_Adding_To_Cart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>404</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5131_Validate_CreateYourOwn_Tattoos()'><b>TC_5131_Validate_CreateYourOwn_Tattoos</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>378</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4928_Verify_GiftCards_GuestUser()'><b>TC_4928_Verify_GiftCards_GuestUser</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>258</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4921_Verify_Mystery_Bundles()'><b>TC_4921_Verify_Mystery_Bundles</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>382</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5132_Validate_FAQ_Navigation_FromCustom()'><b>TC_5132_Validate_FAQ_Navigation_FromCustom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>253</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5139_Validate_Maxmize_minimize_FAQ_FromCustom()'><b>TC_5139_Validate_Maxmize_minimize_FAQ_FromCustom</b><br>Test class: Inkbox.Tests.CustomTest</td>
+<td></td>
+<td>149</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4933_AddItemsToCart_without_Login_and_ValidateAfterLogin()'><b>TC_4933_AddItemsToCart_without_Login_and_ValidateAfterLogin</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>477</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5136_Validating_Text_SaveMessage_Custom()'><b>TC_5136_Validating_Text_SaveMessage_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>312</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4922_Verify_Mystery_Bundles_GuestUser()'><b>TC_4922_Verify_Mystery_Bundles_GuestUser</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>253</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4929_GuestScenario_Adding_ItemsTocart()'><b>TC_4929_GuestScenario_Adding_ItemsTocart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>282</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4918_Verify_Cart_is_Empty()'><b>TC_4918_Verify_Cart_is_Empty</b><br>Test class: Inkbox.Tests.CartTest<br>Parameters: GBP</td>
+<td></td>
+<td>282</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5129_Add_Custom_Preview_product_ToCart()'><b>TC_5129_Add_Custom_Preview_product_ToCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>377</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4898_PaymentMethods_Validation_Checkoutpage()'><b>TC_4898_PaymentMethods_Validation_Checkoutpage</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>410</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4916_Validate_Frequently_PurchasedItemsToCart()'><b>TC_4916_Validate_Frequently_PurchasedItemsToCart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>471</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4924_Validate_Bundles_GuestUser()'><b>TC_4924_Validate_Bundles_GuestUser</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>258</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4923_Validate_BundlesTest()'><b>TC_4923_Validate_BundlesTest</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>386</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4915_Validate_Checkout()'><b>TC_4915_Validate_Checkout</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>450</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4914_PriceValidation()'><b>TC_4914_PriceValidation</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>329</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4999_KeepShoping_Validation()'><b>TC_4999_KeepShoping_Validation</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>407</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4927_Verify_GiftCards()'><b>TC_4927_Verify_GiftCards</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>385</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5134_CommunityCreated_Validation_Custom()'><b>TC_5134_CommunityCreated_Validation_Custom</b><br>Test class: Inkbox.Tests.CustomTest</td>
+<td></td>
+<td>259</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4931_IncreamentProduct_InCart_And_INC_cannot_remove_item_from_cart()'><b>TC_4931_IncreamentProduct_InCart_And_INC_cannot_remove_item_from_cart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>467</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5130_Custom_Menubar()'><b>TC_5130_Custom_Menubar</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>295</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.UploadDesignInGuestUser_And_Login_and_validate_Dashboard()'><b>UploadDesignInGuestUser_And_Login_and_validate_Dashboard</b><br>Test class: Inkbox.Tests.CustomTest</td>
+<td></td>
+<td>158</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_31429_Verify_Gpay_Paypal_and_payments_methods_in_cart()'><b>TC_31429_Verify_Gpay_Paypal_and_payments_methods_in_cart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>410</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4917_Verify_Continue_To_Checkout()'><b>TC_4917_Verify_Continue_To_Checkout</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>416</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5135_Validating_Text_Custom()'><b>TC_5135_Validating_Text_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>354</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4913_Adding_ProductsToCartFromPDPpage()'><b>TC_4913_Adding_ProductsToCartFromPDPpage</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td></td>
+<td>639</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_31454_Verify_Gpay_Paypal_and_payments_methods_in_cart_Custom()'><b>TC_31454_Verify_Gpay_Paypal_and_payments_methods_in_cart_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/</td>
+<td></td>
+<td>426</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5133_Recentlycreated_Validation_Custom()'><b>TC_5133_Recentlycreated_Validation_Custom</b><br>Test class: Inkbox.Tests.CustomTest</td>
+<td></td>
+<td>260</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_5057_Validate_freeShipping_Message_Custom()'><b>TC_5057_Validate_freeShipping_Message_Custom</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.CustomPage.Validate_freeShippingMessage_Custom(CustomPage.java:533)
+	at Inkbox.Pages.CustomPage.Validate_FreeshipplingMessage_Custom(CustomPage.java:456)
+	at Inkbox.Tests.CustomTest.TC_5057_Validate_freeShipping_Message_Custom(CustomTest.java:257)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523818371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523818371'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.getText(ControlHelpers.java:265)
+	at Inkbox.Pages.CustomPage.Validate_freeShippingMessage_Custom(CustomPage.java:533)
+	at Inkbox.Pages.CustomPage.Validate_FreeshipplingMessage_Custom(CustomPage.java:456)
+	at Inkbox.Tests.CustomTest.TC_5057_Validate_freeShipping_Message_Custom(CustomTest.java:257)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>369</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeThree_CustomProducttoCart()'><b>AddingSizeThree_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeThree_CustomProducttoCart(CustomTest.java:74)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1356856334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1356856334'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeThree_CustomProducttoCart(CustomTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>346</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_7483_LearnMoreSectionTieredDiscountsBannerInCart()'><b>TC_7483_LearnMoreSectionTieredDiscountsBannerInCart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77fb809952d1e9efb7bd6d7871a6b849
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at Helpers.ControlHelpers.HoverOver(ControlHelpers.java:411)
+	at Inkbox.Pages.CartPage.Validate_LearnMoreSectionTieredDiscountsBannerInCart(CartPage.java:153)
+	at Inkbox.Tests.CartTest.TC_7483_LearnMoreSectionTieredDiscountsBannerInCart(CartTest.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810736590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810736590'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9NIDAD7&apos;, ip: &apos;10.0.0.164&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\IBCK-W~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77fb809952d1e9efb7bd6d7871a6b849
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at Helpers.ControlHelpers.HoverOver(ControlHelpers.java:411)
+	at Inkbox.Pages.CartPage.Validate_LearnMoreSectionTieredDiscountsBannerInCart(CartPage.java:153)
+	at Inkbox.Tests.CartTest.TC_7483_LearnMoreSectionTieredDiscountsBannerInCart(CartTest.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>307</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4998_Validate_ZeroItemsIncart()'><b>TC_4998_Validate_ZeroItemsIncart</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Tests.CartTest.TC_4998_Validate_ZeroItemsIncart(CartTest.java:73)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace695287593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace695287593'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Tests.CartTest.TC_4998_Validate_ZeroItemsIncart(CartTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>425</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.TC_81294_AddingSizeTwo_CustomProducttoCart()'><b>TC_81294_AddingSizeTwo_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.TC_81294_AddingSizeTwo_CustomProducttoCart(CustomTest.java:65)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1816549278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1816549278'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.TC_81294_AddingSizeTwo_CustomProducttoCart(CustomTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>346</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_4932_VerifyFreeShippingMessage()'><b>TC_4932_VerifyFreeShippingMessage</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;£18GBP&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:468)
+	at Inkbox.Tests.CartTest.TC_4932_VerifyFreeShippingMessage(CartTest.java:472)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace52425926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace52425926'><pre>java.lang.NumberFormatException: For input string: &quot;£18GBP&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:468)
+	at Inkbox.Tests.CartTest.TC_4932_VerifyFreeShippingMessage(CartTest.java:472)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>336</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeFourth_CustomProducttoCart()'><b>AddingSizeFourth_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFourth_CustomProducttoCart(CustomTest.java:83)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572832693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1572832693'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFourth_CustomProducttoCart(CustomTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>347</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeFifth_CustomProducttoCart()'><b>AddingSizeFifth_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_CustomProducttoCart(CustomTest.java:93)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834151732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834151732'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_CustomProducttoCart(CustomTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>350</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+<tr>
+<td title='Inkbox.Tests.CartTest.TC_21939_Validate_SelectedSize_NegativeScenario()'><b>TC_21939_Validate_SelectedSize_NegativeScenario</b><br>Test class: Inkbox.Tests.CartTest</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.Entertext(ControlHelpers.java:311)
+	at Inkbox.Pages.AccountPage.Validate_SelectedSize_NegativeScenario(AccountPage.java:234)
+	at Inkbox.Tests.CartTest.TC_21939_Validate_SelectedSize_NegativeScenario(CartTest.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace787481853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace787481853'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.Entertext(ControlHelpers.java:311)
+	at Inkbox.Pages.AccountPage.Validate_SelectedSize_NegativeScenario(AccountPage.java:234)
+	at Inkbox.Tests.CartTest.TC_21939_Validate_SelectedSize_NegativeScenario(CartTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>290</td>
+<td>Inkbox.Tests.CartTest@6e9175d8</td></tr>
+<tr>
+<td title='Inkbox.Tests.CustomTest.AddingSizeFifth_Two_CustomProducttoCart()'><b>AddingSizeFifth_Two_CustomProducttoCart</b><br>Test class: Inkbox.Tests.CustomTest<br>Parameters: https://inkbox.com/, GBP</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_Two_CustomProducttoCart(CustomTest.java:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783791245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783791245'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at Helpers.ControlHelpers.JavaScriptExecutor_Button_Click(ControlHelpers.java:249)
+	at Inkbox.Pages.CartPage.RemoveAllItemsFromCart(CartPage.java:540)
+	at Inkbox.Pages.CustomPage.Validate_CreateYourOwnTattoos_size2(CustomPage.java:242)
+	at Inkbox.Tests.CustomTest.AddingSizeFifth_Two_CustomProducttoCart(CustomTest.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>346</td>
+<td>Inkbox.Tests.CustomTest@15bb5034</td></tr>
+</table><p>
+</body>
+</html>
