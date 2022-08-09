@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" parallel="methods" name="Test(failed)">
+    <parameter name="geoLocation" value="CAD"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="URL" value="https://staging.inkbox.com/"/>
+    <classes>
+      <class name="Inkbox.Tests.AccountTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="BeforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="Validate_Navigation_URL_ArtistPortal"/>
+          <include name="AfterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Inkbox.Tests.AccountTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
